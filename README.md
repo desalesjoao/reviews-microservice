@@ -82,8 +82,8 @@ node index.js
 **POST** `/api/pedidos`
 ```json
 {
-  "usuario_id": 1,
-  "restaurante_id": 2
+  "usuario_id": 21,
+  "restaurante_id": 22
 }
 ```
 
