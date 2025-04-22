@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login</title>
+  <link rel="stylesheet" href="../css/login.css" />
+</head>
+<body>
+  <form id="loginForm">
+    <h2>Login</h2>
+    <label for="email">Email:</label>
+    <input type="email" id="email" required />
+
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha" required />
+
+    <button type="submit">Entrar</button>
+  </form>
+
+  <div id="alertBox" class="hidden">
+    <div class="alert-content">
+      <p id="alertMessage"></p>
+      <button id="alertButton">Tentar novamente</button>
+    </div>
+  </div>
+  
+
+  <script src="../script/login.js"></script>
+</body>
+</html>

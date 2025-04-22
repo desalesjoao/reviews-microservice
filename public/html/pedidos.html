@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Área do Cliente - PEDIDOS</title>
+  <link rel="stylesheet" href="../css/pedidos.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="left">
+    <h2>Seus pedidos finalizados</h2>
+    <div id="listaPedidos"></div>
+  </div>
+
+  <div class="right">
+    <h2>Avaliar Pedido</h2>
+    <form id="formAvaliacao" style="display:none;">
+      <input type="hidden" id="pedidoSelecionado" />
+      <label for="nota">Nota (1 a 5):</label>
+      <select id="nota" required>
+        <option value="">Selecione</option>
+        <option value="1">1 - Péssimo</option>
+        <option value="2">2 - Ruim</option>
+        <option value="3">3 - Regular</option>
+        <option value="4">4 - Bom</option>
+        <option value="5">5 - Excelente</option>
+      </select>
+
+      <label for="comentario">Comentário:</label>
+      <textarea id="comentario" rows="4" required></textarea>
+
+      <button type="submit">Enviar Avaliação</button>
+    </form>
+  </div>
+</div>
+
+<script src="../script/pedidos.js"></script>
+</body>
+</html>
